@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export"
   },
   "dependencies": {
     "react": "latest",
@@ -23,6 +24,5 @@
     "tailwindcss": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest"
-  },
-  "export": "next export"
+  }
 }

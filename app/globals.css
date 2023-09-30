@@ -26,6 +26,10 @@ utilities layer : is for small, single-purpose classes that should always take p
   .hero__subtitle {
     @apply sm:text-2xl xl:text-3xl text-xl font-light;
   }
+
+  .button__main {
+    @apply flex flex-row justify-center items-center py-1 px-3 outline-none;
+  }
 }
 
 @layer utilities {

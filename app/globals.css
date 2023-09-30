@@ -16,7 +16,7 @@ utilities layer : is for small, single-purpose classes that should always take p
 
 @layer components {
   .hero__main {
-    @apply flex xl:flex-row flex-col gap-3 relative max-w-[1500px] mx-auto;
+    @apply flex xl:flex-row flex-col gap-3 relative;
   }
 
   .hero__title {
@@ -28,7 +28,7 @@ utilities layer : is for small, single-purpose classes that should always take p
   }
 
   .button__main {
-    @apply flex flex-row justify-center items-center py-1 px-3 outline-none;
+    @apply flex flex-row justify-center items-center outline-none;
   }
 }
 
@@ -41,11 +41,19 @@ utilities layer : is for small, single-purpose classes that should always take p
     @apply flex items-center justify-between;
   }
 
+  .flex-end {
+    @apply flex items-center justify-end;
+  }
+
   .p-x {
     @apply sm:px-9 px-6;
   }
 
   .p-y {
     @apply sm:py-6 py-3;
+  }
+
+  .max-width {
+    @apply max-w-screen-2xl mx-auto;
   }
 }

@@ -9,14 +9,15 @@ const Hero = () => {
   };
 
   return (
-    <div className="hero__main">
+    <div className="hero__main max-width">
       <div className="flex-1 p-x">
         <h1 className="hero__title">Hello World!</h1>
         <p className="hero__subtitle">This gets awesome. To be continued...</p>
         <Button
           text="Click me"
-          textStyle="bg-purple-600 text-white rounded-full px-3"
+          textStyle="bg-green-600 text-white rounded-full px-3"
           handleClick={handleClicks}
+          btnStyle="pt-1"
         />
       </div>
     </div>

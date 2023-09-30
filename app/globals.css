@@ -1,27 +1,47 @@
+/*
+base layer : is for things like reset rules or default styles applied to plain HTML elements.
+components layer : is for class-based styles that you want to be able to override with utilities.
+utilities layer : is for small, single-purpose classes that should always take precedence over any other styles.
+*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  html {
+    font-family: Proxima Nova, system-ui, sans-serif;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@layer components {
+  .hero__main {
+    @apply flex xl:flex-row flex-col gap-3 relative max-w-[1500px] mx-auto;
+  }
+
+  .hero__title {
+    @apply sm:text-6xl xl:text-7xl text-5xl font-bold;
+  }
+
+  .hero__subtitle {
+    @apply sm:text-2xl xl:text-3xl text-xl font-light;
+  }
+}
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .p-x {
+    @apply sm:px-9 px-6;
+  }
+
+  .p-y {
+    @apply sm:py-6 py-3;
+  }
 }

@@ -12,6 +12,14 @@ utilities layer : is for small, single-purpose classes that should always take p
   html {
     font-family: Proxima Nova, system-ui, sans-serif;
   }
+
+  .bg-dark {
+    @apply bg-gray-900;
+  }
+
+  .bg-light {
+    @apply bg-white;
+  }
 }
 
 @layer components {
@@ -43,6 +51,10 @@ utilities layer : is for small, single-purpose classes that should always take p
 
   .flex-end {
     @apply flex items-center justify-end;
+  }
+
+  .flex-even {
+    @apply flex items-center justify-evenly;
   }
 
   .p-x {

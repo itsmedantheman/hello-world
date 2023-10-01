@@ -15,11 +15,11 @@ jobs:
 
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v2.3.1
-      - name: Use Node.js 16.x
-        uses: actions/setup-node@v1
+        uses: actions/checkout@v3
+      - name: Use Node.js 18.x
+        uses: actions/setup-node@v3
         with:
-          node-version: "16.x"
+          node-version: "18.x"
 
       - name: Installing my packages
         run: npm ci
@@ -31,5 +31,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.4.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: public # The branch the action will deploy to
-          FOLDER: out # The folder the action will deploy to
+          branch: public # The branch the action will deploy to
+          folder: out # The folder the action will deploy to

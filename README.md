@@ -1,5 +1,8 @@
 ## Hello World
 
+open production build:
+[https://itsmedantheman.github.io/hello-world](https://itsmedantheman.github.io/hello-world)
+
 run the development server:
 
 ```bash

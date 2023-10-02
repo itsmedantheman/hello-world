@@ -13,12 +13,12 @@ utilities layer : is for small, single-purpose classes that should always take p
     font-family: Proxima Nova, system-ui, sans-serif;
   }
 
-  .bg-dark {
-    @apply bg-gray-900;
+  html {
+    color-scheme: light;
   }
 
-  .bg-light {
-    @apply bg-white;
+  html[data-theme="dark"] {
+    color-scheme: dark;
   }
 }
 

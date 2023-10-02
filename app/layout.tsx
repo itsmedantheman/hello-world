@@ -1,5 +1,7 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { getTheme } from "../lib/getTheme";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "itsmeDantheman",
@@ -13,6 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script id="theme" dangerouslySetInnerHTML={{ __html: getTheme }} />
       <body className="relative">{children}</body>
     </html>
   );

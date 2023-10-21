@@ -1,4 +1,4 @@
-import { Hero, Navbar } from "@/components";
+import { Cards, Footer, Hero, Navbar } from "@/components";
 
 export default function Home() {
   return (
@@ -6,7 +6,9 @@ export default function Home() {
       <Navbar />
       <main className="overflow-hidden">
         <Hero />
+        <Cards />
       </main>
+      <Footer />
     </>
   );
 }

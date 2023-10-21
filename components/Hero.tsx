@@ -4,8 +4,8 @@ import React from "react";
 import { Button } from ".";
 
 const Hero = () => {
-  const handleClicks = () => {
-    alert("Thanks.");
+  const handleClick = () => {
+    alert("Thanks. Stay tuned.");
   };
 
   return (
@@ -16,7 +16,7 @@ const Hero = () => {
         <Button
           text="Click me"
           textStyle="bg-green-600 text-white rounded-full px-3"
-          handleClick={handleClicks}
+          handleClick={handleClick}
           btnStyle="pt-1"
         />
       </div>

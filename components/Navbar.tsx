@@ -1,5 +1,4 @@
 import React from "react";
-import { DarkmodeToggler } from ".";
 import dynamic from "next/dynamic";
 
 const Navbar = () => {

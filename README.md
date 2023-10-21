@@ -30,3 +30,7 @@ select current word
 
 auto-format
 `Shift + Alt + F`
+
+
+used images:
+https://www.flaticon.com/free-icon/engineer_9791616?term=engineer&page=1&position=88&origin=search&related_id=9791616
